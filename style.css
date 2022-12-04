@@ -1,0 +1,283 @@
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""), url("../fonts/raleway-v28-latin-500.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/raleway-v28-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/raleway-v28-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/raleway-v28-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: local(""), url("../fonts/open-sans-v34-latin-600.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/open-sans-v34-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/open-sans-v34-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/open-sans-v34-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/open-sans-v34-latin-regular.eot"); /* IE9 Compat Modes */
+  src: local(""),
+    url("../fonts/open-sans-v34-latin-regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../fonts/open-sans-v34-latin-regular.woff2")
+      format("woff2"),
+    /* Super Modern Browsers */ url("../fonts/open-sans-v34-latin-regular.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../fonts/open-sans-v34-latin-regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../fonts/open-sans-v34-latin-regular.svg#OpenSans") format("svg"); /* Legacy iOS */
+}
+.header {
+  background-color: black;
+}
+.header__center {
+  max-width: 1230px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.header__navlist {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+.header__navlist__item:nth-child(1n + 2) {
+  margin-left: 55px;
+}
+.header__logo {
+  margin-left: 115px;
+}
+.wrapper {
+  background: url(./pic/image.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.wrapper__opacity {
+  background: rgba(0, 0, 0, 0.5);
+}
+.content {
+  width: 55%;
+}
+.con {
+  display: flex;
+  justify-content: space-between;
+  padding: 175px 20px 165px 150px;
+  max-width: 1170px;
+}
+.content__logo {
+  width: 270px;
+}
+.content h1 {
+  max-width: 670px;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 56px;
+  color: #ffffff;
+}
+.content hr {
+  width: 170px;
+  margin: 0;
+}
+.content h5 {
+  max-width: 270px;
+  display: flex;
+  flex-wrap: wrap;
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+.content input {
+  width: 270px;
+  height: 58px;
+  background: rgba(0, 0, 0, 0.5);
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+.input {
+  max-width: 470px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 10px;
+  margin-left: 30px;
+}
+.input label,
+.input input[type="submit"] {
+  text-align: center;
+}
+.input label {
+  min-width: 306px;
+  margin: 0 10px;
+  height: 33px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #333333;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+.input span {
+  color: #ec7979;
+}
+.input input[type="text"] {
+  border: none;
+  border-bottom: 1px solid #bdbdbd;
+  padding-bottom: 16px;
+  margin-bottom: 33px;
+  margin-right: 50px;
+  margin-left: 53px;
+}
+.input input[type="submit"] {
+  margin-top: 40px;
+  width: 470px;
+  height: 60px;
+  border-radius: 0px 0px 10px 10px;
+  background: #ec7979;
+  color: #ffffff;
+  border: none;
+}
+.input input {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #bdbdbd;
+}
+@media (max-width: 1200px) {
+  .header__logo {
+    margin-left: 115px;
+  }
+  .header__navlist {
+    margin-right: 25px;
+  }
+  .con {
+    padding: 136px 20px 106px 115px;
+  }
+  .input {
+    width: 45%;
+  }
+  .input input[type="submit"] {
+    width: 100%;
+  }
+  .content h1 {
+    font-size: 36px;
+    line-height: 42px;
+    width: 453px;
+  }
+  .content h5 {
+    font-size: 14px;
+    line-height: 16px;
+    width: 183px;
+  }
+}
+@media (max-width: 900px) {
+  .content h1 {
+    width: 50%;
+    font-size: 36px;
+    line-height: 42px;
+  }
+  .content {
+    width: 50%;
+  }
+  .input {
+    width: 50%;
+  }
+  .header__center {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .header__logo {
+    margin-left: 10px;
+  }
+  .con {
+    padding-left: 10px;
+  }
+}
+@media (max-width: 740px) {
+  .header__navlist {
+    display: none;
+  }
+  .con {
+    display: block;
+    padding: 80px 0 50px 0;
+  }
+  .content {
+    width: auto;
+    text-align: center;
+  }
+  .content h1 {
+    width: auto;
+  }
+  .content__logo {
+    display: none;
+  }
+  .content hr {
+    margin: auto;
+  }
+  .content h5 {
+    width: auto;
+    max-width: 100%;
+    display: block;
+  }
+  .content input {
+    margin-bottom: 56px;
+  }
+  .input {
+    width: 100%;
+    margin: 0 auto 0 auto;
+  }
+}
+@media (max-width: 490px) {
+  .input {
+    max-width: 90%;
+    max-height: 90%;
+  }
+  .input label {
+    font-size: 14px;
+    line-height: 19px;
+    min-width: 240px;
+  }
+}
